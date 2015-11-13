@@ -1,25 +1,51 @@
-# Ember-jshamcrest
+# ember-jshamcrest
 
-This README outlines the details of collaborating on this Ember addon.
+Ember addon to make [JsHamcrest](https://github.com/danielfm/jshamcrest) available as an import in your tests. 
+
+`ember-jshamcrest` was inspired by [ember-sinon](https://github.com/csantero/ember-sinon).
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+Install JsHamcrest in your ember application using the latest Ember CLI:
 
-## Running
+    $ ember install ember-jshamcrest
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Getting Started
 
-## Running Tests
+In order to use JsHamcrest in your tests, simply import it in your test file.  
 
-* `ember test`
-* `ember test --server`
+    import Ember from 'ember';
+    import { module, test } from 'qunit';
+    import startApp from '../../tests/helpers/start-app';
+    import JsHamcrest from 'jshamcrest';
 
-## Building
+    module('Acceptance | js mock', {
+      beforeEach: function() {
+        this.application = startApp();
+      },
 
-* `ember build`
+      afterEach: function() {
+        Ember.run(this.application, 'destroy');
+      }
+    });
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+    test('verify JsHamcrest is available', function(assert) {  
+      assert.ok(JsHamcrest);
+      assert.ok(JsHamcrest.Matchers);
+  
+      assert.ok(assertThat);
+    });
+
+## API Docs
+
+The full API documentation for JsHamcrest can be found [here](http://danielmartins.ninja/jshamcrest/).
+
+## License
+
+MIT, see [License.md](https://github.com/j-fischer/ember-jshamcrest/blob/master/LICENSE.md)
+
+## Changelog
+
+### 0.1.0
+
+- Initial release
