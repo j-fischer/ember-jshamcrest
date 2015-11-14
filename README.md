@@ -47,6 +47,8 @@ ember-jshamcrest is licensed under [MIT](https://github.com/j-fischer/ember-jsha
 
 ## Changelog
 
-### 0.1.0
+Due to a number of NPM packaging issues (see https://github.com/npm/npm/issues/5082), some packages are missing the index.js file. Those packages have been deprecated. 
+
+### 0.1.x
 
 - Initial release
