@@ -32,8 +32,7 @@ In order to use JsHamcrest in your tests, simply import it in your test file.
     test('verify JsHamcrest is available', function(assert) {  
       assert.ok(JsHamcrest);
       assert.ok(JsHamcrest.Matchers);
-  
-      assert.ok(assertThat);
+      assert.ok(JsHamcrest.Operators);
     });
 
 ## API Docs
