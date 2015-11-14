@@ -42,6 +42,8 @@ The full API documentation for JsHamcrest can be found [here](http://danielmarti
 
 ## License
 
+JsHamcrest is licensed under [BSD](https://github.com/danielfm/jshamcrest/blob/master/LICENSE) 
+
 MIT, see [License.md](https://github.com/j-fischer/ember-jshamcrest/blob/master/LICENSE.md)
 
 ## Changelog
