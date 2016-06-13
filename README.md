@@ -49,11 +49,15 @@ The full API documentation for JsHamcrest can be found [here](http://danielmarti
 
 JsHamcrest is licensed under [BSD](https://github.com/danielfm/jshamcrest/blob/master/LICENSE)
 
-ember-jshamcrest is licensed under [MIT](https://github.com/j-fischer/ember-jshamcrest/blob/master/LICENSE.md)
+ember-jshamcrest is licensed under [BSD 3-clause](https://github.com/j-fischer/ember-jshamcrest/blob/master/LICENSE.md)
 
 ## Changelog
 
 Due to a number of NPM packaging issues (see https://github.com/npm/npm/issues/5082), some packages are missing the index.js file. Those packages have been deprecated.
+
+### 0.2.0
+
+- Upgraded Ember CLI and addon to version 2.6
 
 ### 0.1.x
 
