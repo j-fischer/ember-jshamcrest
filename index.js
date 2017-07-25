@@ -1,4 +1,4 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
 module.exports = {
@@ -6,10 +6,10 @@ module.exports = {
 
   included: function (app) {
     if (app.tests) {
-      app.import('bower_components/jshamcrest/build/jshamcrest.js', {
+      app.import(this.project.nodeModulesPath + '/jshamcrest/jshamcrest.js', {
         type: 'test'
       });
-      
+
       app.import('vendor/ember-jshamcrest/shim.js', {
         type: 'test'
       });

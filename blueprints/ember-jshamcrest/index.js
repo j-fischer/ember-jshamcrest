@@ -1,5 +1,5 @@
 module.exports = {
-  description: 'Adds JsHamcrest to bower dependencies.',
+  description: 'Adds JsHamcrest to npm dependencies.',
 
   normalizeEntityName: function() {
     // this prevents an error when the entityName is
@@ -8,6 +8,6 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return this.addBowerPackageToProject('jshamcrest');
+    return this.addPackageToProject('jshamcrest');
   }
 };

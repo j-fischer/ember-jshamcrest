@@ -55,6 +55,10 @@ ember-jshamcrest is licensed under [BSD 3-clause](https://github.com/j-fischer/e
 
 Due to a number of NPM packaging issues (see https://github.com/npm/npm/issues/5082), some packages are missing the index.js file. Those packages have been deprecated.
 
+### 0.3.0
+
+- Upgraded Ember CLI to version 2.14.1, removed bower dependencies
+
 ### 0.2.0
 
 - Upgraded Ember CLI and addon to version 2.6
